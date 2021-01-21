@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Business Casual - Start Bootstrap Theme</title>
+    <title>Group Assigment WP</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,8 +25,8 @@
   <body>
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <span class="site-heading-upper text-primary mb-3">A Free Bootstrap 4 Business Theme</span>
-      <span class="site-heading-lower">Business Casual</span>
+      <span class="site-heading-upper text-primary mb-3">Pizza is the circle of life.</span>
+      <span class="site-heading-lower">All About the Store</span>
     </h1>
 
     <!-- Navigation -->
@@ -52,17 +52,123 @@
             <li class="nav-item active px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
             </li>
-           <li class="nav-item px-lg-4">
-             <a class="nav-link text-uppercase text-expanded" href="deals.html">Hot Deals!</a>
-           </li>
-           <li class="nav-item px-lg-4">
-             <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact Us</a>
-           </li>
-           <li class="nav-item px-lg-4">
-             <a class="nav-link text-uppercase text-expanded" href="faq.html">FAQ</a>
-           </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="deals.html">Hot Deals!</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="faq.html">FAQ</a>
+            </li>
           </ul>
         </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+        body {
+          font-family: Raleway;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .openBtn {
+          background: #f1f1f1;
+          border: none;
+          padding: 10px 12px;
+          font-size: 14px;
+          cursor: pointer;
+        }
+        
+        .openBtn:hover {
+          background: #bbb;
+        }
+        
+        .overlay {
+          height: 100%;
+          width: 100%;
+          display: none;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgb(0,0,0);
+          background-color: rgba(0,0,0, 0.9);
+        }
+        
+        .overlay-content {
+          position: relative;
+          top: 46%;
+          width: 80%;
+          text-align: center;
+          margin-top: 30px;
+          margin: auto;
+        }
+        
+        .overlay .closebtn {
+          position: absolute;
+          top: 20px;
+          right: 45px;
+          font-size: 60px;
+          cursor: pointer;
+          color: white;
+        }
+        
+        .overlay .closebtn:hover {
+          color: #ccc;
+        }
+        
+        .overlay input[type=text] {
+          padding: 14px;
+          font-size: 17px;
+          border: none;
+          float: left;
+          width: 80%;
+          background: white;
+        }
+        
+        .overlay input[type=text]:hover {
+          background: #f1f1f1;
+        }
+        
+        .overlay button {
+          float: left;
+          width: 20%;
+          padding: 14px;
+          background: #e6a756;
+          font-size: 17px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .overlay button:hover {
+          background: #e6a756;
+        }
+        </style>
+        <body>
+        
+        <div id="myOverlay" class="overlay">
+          <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+          <div class="overlay-content">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+        
+        <button class="openBtn" onclick="openSearch()">Search Here</button>
+        
+        <script>
+        function openSearch() {
+          document.getElementById("myOverlay").style.display = "block";
+        }
+        
+        function closeSearch() {
+          document.getElementById("myOverlay").style.display = "none";
+        }
+        </script>
       </div>
     </nav>
 
@@ -107,9 +213,9 @@
               </ul>
               <p class="address mb-5">
                 <em>
-                  <strong>1116 Orchard Street</strong>
+                  <strong>94650 Dragon Alley</strong>
                   <br>
-                  Golden Valley, Minnesota
+                  Port Key, Whimsically
                 </em>
               </p>
               <p class="mb-0">
@@ -127,20 +233,125 @@
 
     <section class="page-section about-heading">
       <div class="container">
-        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/dining.jpg" alt="">
         <div class="about-heading-content">
           <div class="row">
             <div class="col-xl-9 col-lg-10 mx-auto">
               <div class="bg-faded rounded p-5">
                 <h2 class="section-heading mb-4">
-                  <span class="section-heading-upper">Strong Coffee, Strong Roots</span>
-                  <span class="section-heading-lower">About Our Cafe</span>
+                  <span class="section-heading-upper">Sugar, spice, and a large pizza slice."</span>
+                  <span class="section-heading-lower">About Our Shop</span>
                 </h2>
-                <p>Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p>
+                <p>Founded in 2020 by the Lucky sisters, our establishment has been serving up rich pizza sourced from artisan farmers in various regions of East and West Malaysia. We are dedicated to travelling the world, finding the best ingredients, and bringing back to you here in our shop.</p>
                 <p class="mb-0">We guarantee that you will fall in
                   <em>lust</em>
-                  with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.</p>
+                  with our decadent ingredients the moment you walk inside until you finish your last slice. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item-title d-flex">
+            <div class="bg-faded p-5 d-flex ml-auto rounded">
+              <h2 class="section-heading mb-0">
+                <span class="section-heading-upper">Baked to Perfection</span>
+                <span class="section-heading-lower">Richful Flavors</span>
+              </h2>
+            </div>
+          </div>
+          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/pizza4.jpg" alt="">
+          <div class="product-item-description d-flex mr-auto">
+            <div class="bg-faded p-5 rounded">
+              <p class="mb-0">We take pride in our work, and it shows. Every time you order a pizza from us, we guarantee that it will be an experience worth having. Whether it's our world famous signature dish, a side menu, or something as simple as a slice of speciality pepperoni, you will be coming back for more.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="page-section">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item-title d-flex">
+            <div class="bg-faded p-5 d-flex mr-auto rounded">
+              <h2 class="section-heading mb-0">
+                <span class="section-heading-upper">Luxurious &amp; Decadent Ingredients</span>
+                <span class="section-heading-lower">Only The Best</span>
+              </h2>
+            </div>
+          </div>
+          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/ingredients.jpg" alt="">
+          <div class="product-item-description d-flex ml-auto">
+            <div class="bg-faded p-5 rounded">
+              <p class="mb-0">Our seasonal menu features delicious snacks, baked goods, and even full meals perfect for breakfast or lunchtime. We source our ingredients from local, oragnic farms whenever possible, alongside premium vendors for specialty goods.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="page-section">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item-title d-flex">
+            <div class="bg-faded p-5 d-flex ml-auto rounded">
+              <h2 class="section-heading mb-0">
+                <span class="section-heading-upper">“It’s crust around the corner.”</span>
+                <span class="section-heading-lower">Crispy Crust</span>
+              </h2>
+            </div>
+          </div>
+          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/crust1.jpg" alt="">
+          <div class="product-item-description d-flex mr-auto">
+            <div class="bg-faded p-5 rounded">
+              <p class="mb-0">The crust is cooked to perfection and it has an unusual flaky/tender texture, and great taste courtesy of three types of fat: vegetable oil, olive oil, and butter. Also, the tiny bit of cornmeal adds subtle crunch.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item-title d-flex">
+            <div class="bg-faded p-5 d-flex mr-auto rounded">
+              <h2 class="section-heading mb-0">
+                <span class="section-heading-upper">Delicious Treats, Good Eats</span>
+                <span class="section-heading-lower">Hot &amp; Special Deals</span>
+              </h2>
+            </div>
+          </div>
+          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/template1.jpg" alt="">
+          <div class="product-item-description d-flex ml-auto">
+            <div class="bg-faded p-5 rounded">
+              <p class="mb-0">Grab our hot and special deals on Friday every week! We only offer what's the best for you. Spreads the words and the joys. First come first serve!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item-title d-flex">
+            <div class="bg-faded p-5 d-flex ml-auto rounded">
+              <h2 class="section-heading mb-0">
+                <span class="section-heading-upper">Comfy &amp; Relaxing Ambience</span>
+                <span class="section-heading-lower">Great Service Always</span>
+              </h2>
+            </div>
+          </div>
+          <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/shop1.jpg" alt="">
+          <div class="product-item-description d-flex mr-auto">
+            <div class="bg-faded p-5 rounded">
+              <p class="mb-0">Our service is our best pride. When you visit us, you'll find an amiable employees, well-trained and discipline. We only provide a comfy and relaxing place for you to enjoy your meals. Please visit us in person to experience it!</p>
             </div>
           </div>
         </div>
