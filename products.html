@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Business Casual - Start Bootstrap Theme</title>
+  <title>Group Assignment WP</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,8 +25,8 @@
 <body>
 
   <h1 class="site-heading text-center text-white d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">A Free Bootstrap 4 Business Theme</span>
-    <span class="site-heading-lower">Business Casual</span>
+    <span class="site-heading-upper text-primary mb-3">Delicious Treats, Good Eats</span>
+    <span class="site-heading-lower">Find Your Fav Pizza Here!</span>
   </h1>
 
   <!-- Navigation -->
@@ -63,8 +63,136 @@
           </li>
         </ul>
       </div>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+        body {
+          font-family: Raleway;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .openBtn {
+          background: #f1f1f1;
+          border: none;
+          padding: 10px 12px;
+          font-size: 14px;
+          cursor: pointer;
+        }
+        
+        .openBtn:hover {
+          background: #bbb;
+        }
+        
+        .overlay {
+          height: 100%;
+          width: 100%;
+          display: none;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgb(0,0,0);
+          background-color: rgba(0,0,0, 0.9);
+        }
+        
+        .overlay-content {
+          position: relative;
+          top: 46%;
+          width: 80%;
+          text-align: center;
+          margin-top: 30px;
+          margin: auto;
+        }
+        
+        .overlay .closebtn {
+          position: absolute;
+          top: 20px;
+          right: 45px;
+          font-size: 60px;
+          cursor: pointer;
+          color: white;
+        }
+        
+        .overlay .closebtn:hover {
+          color: #ccc;
+        }
+        
+        .overlay input[type=text] {
+          padding: 14px;
+          font-size: 17px;
+          border: none;
+          float: left;
+          width: 80%;
+          background: white;
+        }
+        
+        .overlay input[type=text]:hover {
+          background: #f1f1f1;
+        }
+        
+        .overlay button {
+          float: left;
+          width: 20%;
+          padding: 14px;
+          background: #e6a756;
+          font-size: 17px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .overlay button:hover {
+          background: #e6a756;
+        }
+        </style>
+        <body>
+        
+        <div id="myOverlay" class="overlay">
+          <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+          <div class="overlay-content">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+        
+        <button class="openBtn" onclick="openSearch()">Search Here</button>
+        
+        <script>
+        function openSearch() {
+          document.getElementById("myOverlay").style.display = "block";
+        }
+        
+        function closeSearch() {
+          document.getElementById("myOverlay").style.display = "none";
+        }
+        </script>
     </div>
   </nav>
+
+  <section class="page-section about-heading">
+    <div class="container">
+      <style>
+        div{
+          text-align: center;
+        }
+      </style>
+      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/pizzatemplate.jpg" alt="" style="width: 100%">
+      <div class="about-heading-content">
+        <div class="row">
+          <div class="col-xl-9 col-lg-10 mx-auto">
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Sugar, spice, and a large pizza slice."</span>
+                <span class="section-heading-lower"><b>Food Menu Lists</b></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="page-section">
     <div class="container">
@@ -72,12 +200,12 @@
         <div class="product-item-title d-flex">
           <div class="bg-faded p-5 d-flex ml-auto rounded">
             <h2 class="section-heading mb-0">
-              <span class="section-heading-upper">Blended to Perfection</span>
-              <span class="section-heading-lower">Coffees &amp; Teas</span>
+              <span class="section-heading-upper">Pepperoni Pizza</span>
+              <span class="section-heading-lower">Incredible Tomato Sauce</span>
             </h2>
           </div>
         </div>
-        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-01.jpg" alt="">
+        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/pepperonipizza.jpg" alt="">
         <div class="product-item-description d-flex mr-auto">
           <div class="bg-faded p-5 rounded">
             <p class="mb-0">We take pride in our work, and it shows. Every time you order a beverage from us, we guarantee that it will be an experience worth having. Whether it's our world famous Venezuelan Cappuccino, a refreshing iced herbal tea, or something as simple as a cup of speciality sourced black coffee, you will be coming back for more.</p>
