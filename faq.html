@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Group Assignment WP</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-casual.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">More Information Here</span>
+    <span class="site-heading-lower">Anything You Should Know</span>
+  </h1>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="deals.html">Hot Deals!</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="faq.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+        body {
+          font-family: Raleway;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .openBtn {
+          background: #f1f1f1;
+          border: none;
+          padding: 10px 12px;
+          font-size: 14px;
+          cursor: pointer;
+        }
+        
+        .openBtn:hover {
+          background: #bbb;
+        }
+        
+        .overlay {
+          height: 100%;
+          width: 100%;
+          display: none;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: rgb(0,0,0);
+          background-color: rgba(0,0,0, 0.9);
+        }
+        
+        .overlay-content {
+          position: relative;
+          top: 46%;
+          width: 80%;
+          text-align: center;
+          margin-top: 30px;
+          margin: auto;
+        }
+        
+        .overlay .closebtn {
+          position: absolute;
+          top: 20px;
+          right: 45px;
+          font-size: 60px;
+          cursor: pointer;
+          color: white;
+        }
+        
+        .overlay .closebtn:hover {
+          color: #ccc;
+        }
+        
+        .overlay input[type=text] {
+          padding: 14px;
+          font-size: 17px;
+          border: none;
+          float: left;
+          width: 80%;
+          background: white;
+        }
+        
+        .overlay input[type=text]:hover {
+          background: #f1f1f1;
+        }
+        
+        .overlay button {
+          float: left;
+          width: 20%;
+          padding: 14px;
+          background: #e6a756;
+          font-size: 17px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .overlay button:hover {
+          background: #e6a756;
+        }
+        </style>
+        <body>
+        
+        <div id="myOverlay" class="overlay">
+          <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+          <div class="overlay-content">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+        
+        <button class="openBtn" onclick="openSearch()">Search Here</button>
+        
+        <script>
+        function openSearch() {
+          document.getElementById("myOverlay").style.display = "block";
+        }
+        
+        function closeSearch() {
+          document.getElementById("myOverlay").style.display = "none";
+        }
+        </script>
+    </div>
+  </nav>
+
+  <section class="page-section about-heading">
+    <div class="container">
+
+      <style>
+        body{
+          font-family: Raleway;
+        }
+        .highlighted{
+          color: red
+        }
+      </style>
+
+        <div class="row">
+          <div class="col-xl-9 col-lg-10 mx-auto">
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-lower">Frequent Asked Questions</span>
+              </h2>
+              <span class="highlighted"> 1. Question: What should I do when I forgot my password?</span>
+              <p>Answer: Click "Forgot password?" button at Login page and recover your account by providing the required information.</p>
+
+              <span class="highlighted">2. Question: Do I have to pay for the membership?</span>
+              <p>Answer: It’s all very simple. You earn One (1) Slice for every RM30 spent, with any qualifying online order (delivery and self - collection, only). When you’ve earned enough Slices for a reward, you can choose to redeem them in exchange for the reward listed in the PizzaCiousss Rewards Menu.</p>
+
+              <span class="highlighted">3. Question: How do I redeem the rewards?</span>
+              <p>Answer: To enjoy the rewards, choose the items you prefer and add into the basket top confirm on the redemption of the reward. Once confirmed, the slices will be deducted based on the rewards you have choose.</p>
+              <p>For Example, total 12 slices available and I choose to redeem the Pasta at the slices required 9 Slices. Once confirmed, a total of 9 Slices will be deducted in your account and remaining balance is at 3 slices.</p>
+
+              <span class="highlighted">4. Question: Will my slice expired?</span>
+              <p>Answer: Yes! In three (3) months, starting from the date that you earned your slices. This is a rolling time frame, which means that if you earn them in September 30th 2019, then it will expire on December 30th 2019.</p>
+
+              <span class="highlighted">5. Question: What do I do when I didn’t receive a slice after 24 hours?</span>
+              <p>Answer: Get in touch with our PizzaCiousss Customer Service at (317) 585-8468</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+      <p class="m-0 small">Copyright &copy; Your Website 2020</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
