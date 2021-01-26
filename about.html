@@ -22,6 +22,29 @@
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <script type="text/javascript">
 
+   
+    
+    window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer", {
+      title:{
+        text: "Pizzacious Sales Performance"              
+      },
+      data: [              
+      {
+        type: "column",
+        dataPoints: [
+          { label: "2016",  y: 10  },
+          { label: "2017", y: 15  },
+          { label: "2018", y: 25  },
+          { label: "2019",  y: 30  },
+          { label: "2020",  y: 50  }
+        ]
+      }
+      ]
+    });
+    chart.render();
+  }
+  </script>
 </head>
 
 <body>
